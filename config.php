@@ -5,10 +5,11 @@
 // define('DB_PASS', '');
 // define('DB_NAME', 'library_system');
 
-define('DB_HOST', getenv('localhost'));  // Use Railway's MySQL host
-define('DB_USER', getenv('root'));  // Use Railway's MySQL username
-define('DB_PASS', getenv(''));  // Use Railway's MySQL password
-define('DB_NAME', getenv('library_system'));  // Use Railway's MySQL database name
+define('DB_HOST', getenv('MYSQLHOST'));
+define('DB_USER', getenv('MYSQLUSER'));
+define('DB_PASS', getenv('MYSQLPASSWORD'));
+define('DB_NAME', getenv('MYSQLDATABASE'));
+ // Use Railway's MySQL database name
 
 /**
  * IMPORTANT SECURITY:
